@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SkripsiInventory.Views.AddNewItemPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20" Padding="15">
+                <Label Text="Nama Barang" FontSize="Medium" />
+                <Entry Text="{Binding Item.Text}" d:Text="Nama Barang" FontSize="Small" />
+                <Label Text="Kode Barang" FontSize="Medium" />
+                <Editor Text="{Binding Item.Description}" d:Text="Kode Barang" FontSize="Small" Margin="0" />
+                <Label Text="Serial Number" FontSize="Medium" />
+                <Editor Text="{Binding Item.Description}" d:Text="Serial Number" FontSize="Small" Margin="0" />
+                <Label Text="Tahun Pembuatan" FontSize="Medium" />
+                <Editor Text="{Binding Item.Description}" d:Text="Tahun Pembuatan" FontSize="Small" Margin="0" />
+                <Label Text="Deskripsi" FontSize="Medium" />
+                <Editor Text="{Binding Item.Description}" d:Text="Deskripsi" FontSize="Small" Margin="0" />
+                <Label Text="Warna" FontSize="Medium" />
+                <Editor Text="{Binding Item.Description}" d:Text="Warna" FontSize="Small" Margin="0" />
+                <Label Text="Jangka Waktu Pemakaian(bulan)" FontSize="Medium" />
+                <Editor Text="{Binding Item.Description}" d:Text="Jangka Waktu Pemakaian(bulan)" FontSize="Small" Margin="0" />
+                <Label Text="Merek" FontSize="Medium" />
+                <Editor Text="{Binding Item.Description}" d:Text="Merek" FontSize="Small" Margin="0" />
+                <Label Text="Harga" FontSize="Medium" />
+                <Editor Text="{Binding Item.Description}" d:Text="Harga" FontSize="Small" Margin="0" />
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
