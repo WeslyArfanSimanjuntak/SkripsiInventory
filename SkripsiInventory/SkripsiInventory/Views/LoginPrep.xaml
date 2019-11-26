@@ -6,9 +6,8 @@
              mc:Ignorable="d"
              x:Class="SkripsiInventory.Views.LoginPrep">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Green">
+        <StackLayout BackgroundColor="#33CCFF">
 
-            <Image Source="xamarin_logo.png" VerticalOptions="Center" HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

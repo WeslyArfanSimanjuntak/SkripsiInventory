@@ -6,24 +6,36 @@
              mc:Ignorable="d"
              x:Class="SkripsiInventory.Views.LoginPage">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
-            <BoxView HeightRequest="10"/>
-            <Image HorizontalOptions="Center" WidthRequest="300" Source="maco.jpg"/>
-            <Frame BackgroundColor="#BF043055" HasShadow="False">
-                <StackLayout Orientation="Vertical" Spacing="10">
-                    <Entry x:Name="Text"  Placeholder="Username"   
-                           PlaceholderColor="White" HeightRequest="40" 
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand">
+
+            <StackLayout Orientation="Vertical" Spacing="15">
+                <BoxView HeightRequest="10"/>
+                <Image HorizontalOptions="Center" WidthRequest="200" Source="logoperbanasinstitute.png"/>
+
+                <Frame BackgroundColor="#33CCFF" HasShadow="False">
+                    <StackLayout Orientation="Vertical" Spacing="10">
+                        <Entry x:Name="Text"  Placeholder="Username"   
+                           PlaceholderColor="White" HeightRequest="50" 
                            TextColor="White"/>
-                    <Entry x:Name="Password" Placeholder="Password"   
-                           PlaceholderColor="White" HeightRequest="40"   
+                        <Entry x:Name="Password" Placeholder="Password"   
+                           PlaceholderColor="White" HeightRequest="50"   
                            IsPassword="True"  
                            TextColor="White"/>
-                </StackLayout>
-            </Frame>
-            <Button Text="Login" TextColor="White"  
-                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
-                    BackgroundColor="#088da5" />
-        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Button Text="Login" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" x:Name="btnLogin"  HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#33CCFF" VerticalOptions="Fill" Clicked="BtnLogin_Clicked" />
+                <Label Text="Register Here" Margin="1"  TextColor="#33CCFF" VerticalOptions="Center" HorizontalOptions="Center" LineBreakMode="NoWrap"></Label>
+                <Label Text="Forgot Password" Margin="1" TextColor="#33CCFF" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding IsBusy}" Padding="12"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+                <ActivityIndicator x:Name="loadingIndicatorLogin" IsRunning="False" IsEnabled="False" Color="Green" BackgroundColor="Transparent" FlowDirection="MatchParent" HorizontalOptions="EndAndExpand" IsVisible="True"/>
+            </StackLayout>
+        </AbsoluteLayout>
+
     </ContentPage.Content>
-    
+
 </ContentPage>

@@ -16,7 +16,24 @@ namespace SkripsiInventory.Views
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            BackgroundColor = Color.Blue;
+            BackgroundColor = Color.White;
+        }
+
+
+        private void BtnLogin_Clicked(object sender, EventArgs e)
+        {
+            if (!this.loadingIndicatorLogin.IsVisible)
+            {
+                this.loadingIndicatorLogin.IsEnabled = true;
+                this.loadingIndicatorLogin.IsRunning = true;
+                this.loadingIndicatorLogin.IsVisible = true;
+            }
+            else
+            {
+                this.loadingIndicatorLogin.IsEnabled = false;
+                this.loadingIndicatorLogin.IsRunning = false;
+                this.loadingIndicatorLogin.IsVisible = false;
+            }
         }
     }
 }
