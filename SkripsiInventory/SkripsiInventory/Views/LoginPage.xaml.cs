@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkripsiInventory.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,16 @@ namespace SkripsiInventory.Views
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             BackgroundColor = Color.White;
+            
         }
 
 
-        private void BtnLogin_Clicked(object sender, EventArgs e)
+        async void BtnLogin_Clicked(object sender, EventArgs e)
         {
+            var ds = new InventoryDataStore();
+
+            var result =await ds.GetItemAsync("2");
+            
             if (!this.loadingIndicatorLogin.IsVisible)
             {
                 this.loadingIndicatorLogin.IsEnabled = true;

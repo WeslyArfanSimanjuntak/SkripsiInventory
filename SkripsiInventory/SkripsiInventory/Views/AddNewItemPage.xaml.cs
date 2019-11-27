@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkripsiInventory.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,13 @@ namespace SkripsiInventory.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddNewItemPage : ContentPage
     {
+        InventoryDataStore datastore;
         public AddNewItemPage()
         {
             InitializeComponent();
         }
-        private void Cancel_Clicked(object sender, EventArgs e)
+
+        private async void Cancel_Clicked(object sender, EventArgs e)
         {
 
         }

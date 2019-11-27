@@ -4,6 +4,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SkripsiInventory.Services;
 using SkripsiInventory.Views;
+using SkripsiInventory.Data;
+using System.IO;
 
 namespace SkripsiInventory
 {
@@ -16,6 +18,18 @@ namespace SkripsiInventory
             DeviceInfo.Platform == DevicePlatform.Android ? "http://10.0.2.2:5000" : "http://localhost:5000";
         public static bool UseMockDataStore = true;
 
+        static TodoItemDatabase database;
+        public static TodoItemDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new TodoItemDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TodoSQLite.db3"));
+                }
+                return database;
+            }
+        }
         public App()
         {
             InitializeComponent();
