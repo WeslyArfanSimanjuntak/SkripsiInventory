@@ -16,5 +16,14 @@ namespace SkripsiInventory.Views
         {
             InitializeComponent();
         }
+        private void Cancel_Clicked(object sender, EventArgs e)
+        {
+
+        }
+        private void Save_Clicked(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

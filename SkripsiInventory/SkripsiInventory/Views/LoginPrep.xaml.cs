@@ -20,7 +20,7 @@ namespace SkripsiInventory.Views
         protected override async void OnAppearing() {
             base.OnAppearing();
             await Task.Delay(1000);
-            await Navigation.PushModalAsync(new NavigationPage(new LoginPage()));
+            await Navigation.PushModalAsync(new NavigationPage(new AddNewItemPage()));
             //await this.Navigation.PushAsync(new NavigationPage(new LoginPage()));
         }
     }

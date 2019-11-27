@@ -16,5 +16,10 @@ namespace SkripsiInventory.Views
         {
             InitializeComponent();
         }
+        private void BtnLogin_Clicked(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

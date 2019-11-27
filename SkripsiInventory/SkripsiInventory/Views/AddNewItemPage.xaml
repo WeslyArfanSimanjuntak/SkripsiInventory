@@ -19,9 +19,9 @@
                 <Label Text="Serial Number" FontSize="Medium" />
                 <Editor Text="{Binding Item.Description}" d:Text="Serial Number" FontSize="Small" Margin="0" />
                 <Label Text="Tahun Pembuatan" FontSize="Medium" />
-                <Editor Text="{Binding Item.Description}" d:Text="Tahun Pembuatan" FontSize="Small" Margin="0" />
+                <Editor Text="{Binding Item.Description}" d:Text="Tahun Pembuatan" FontSize="Small" Margin="0" Keyboard="Numeric" />
                 <Label Text="Deskripsi" FontSize="Medium" />
-                <Editor Text="{Binding Item.Description}" d:Text="Deskripsi" FontSize="Small" Margin="0" />
+                <Editor Text="{Binding Item.Description}" d:Text="Deskripsi" FontSize="Small" Margin="0" Keyboard="Numeric" />
                 <Label Text="Warna" FontSize="Medium" />
                 <Editor Text="{Binding Item.Description}" d:Text="Warna" FontSize="Small" Margin="0" />
                 <Label Text="Jangka Waktu Pemakaian(bulan)" FontSize="Medium" />

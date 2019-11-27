@@ -6,12 +6,24 @@
              mc:Ignorable="d"
              x:Class="SkripsiInventory.Views.ItemDetailPage"
              Title="{Binding Title}">
-
-    <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small"/>
-    </StackLayout>
-    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Share WA" Clicked="ShareWA_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout Spacing="20" Padding="15">
+            <Frame BackgroundColor="#33CCFF" HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <Label Text="Nama:" FontSize="Medium" />
+                    <Label Text="{Binding Item.Text}" d:Text="Nama" FontSize="Small"/>
+                    <Label Text="Kode:" FontSize="Medium" />
+                    <Label Text="{Binding Item.Description}" d:Text="Kode" FontSize="Small"/>
+                    <Label Text="Pengguna:" FontSize="Medium" />
+                    <Label Text="{Binding Item.Description}" d:Text="Pengguna" FontSize="Small"/>
+                    <Label Text="Harga:" FontSize="Medium" />
+                    <Label Text="{Binding Item.Description}" d:Text="Harga" FontSize="Small"/>
+                </StackLayout>
+            </Frame>
+            <Image HorizontalOptions="Center" WidthRequest="300" Source="logoperbanasinstitute.png"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

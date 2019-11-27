@@ -35,5 +35,10 @@ namespace SkripsiInventory.Views
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
         }
+
+        private void ShareWA_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
