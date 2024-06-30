@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29215.179
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkripsiInventory.Android", "SkripsiInventory\SkripsiInventory.Android\SkripsiInventory.Android.csproj", "{97B36F77-247D-491F-B146-7F419C70E082}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkripsiInventory.iOS", "SkripsiInventory\SkripsiInventory.iOS\SkripsiInventory.iOS.csproj", "{8CF576AA-468D-4AEF-8BD3-069F5E4714E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkripsiInventory.MobileAppService", "SkripsiInventory\SkripsiInventory.MobileAppService\SkripsiInventory.MobileAppService.csproj", "{84A4CE42-9506-4AA6-A081-F78FD6D2BFEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkripsiInventory.MobileAppService", "SkripsiInventory\SkripsiInventory.MobileAppService\SkripsiInventory.MobileAppService.csproj", "{84A4CE42-9506-4AA6-A081-F78FD6D2BFEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkripsiInventory", "SkripsiInventory\SkripsiInventory\SkripsiInventory.csproj", "{BA2F98F9-CA1E-44F4-8168-8A554178992E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkripsiInventoryMobile", "SkripsiInventory\SkripsiInventory\SkripsiInventoryMobile.csproj", "{BA2F98F9-CA1E-44F4-8168-8A554178992E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
